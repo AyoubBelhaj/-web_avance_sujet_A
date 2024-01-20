@@ -1,0 +1,82 @@
+.shadow-textarea textarea.form-control::placeholder {
+    font-weight: 300;
+}
+
+.shadow-textarea textarea.form-control {
+    padding-left: 0.8rem;
+}
+
+/* Custom Styles */
+.shadow-textarea textarea.form-control::placeholder {
+    font-weight: 300;
+}
+
+.shadow-textarea textarea.form-control {
+    padding-left: 0.8rem;
+}
+
+.fancy-button {
+    border-radius: 5px;
+}
+
+.fancy-button:hover {
+    opacity: 0.8;
+}
+
+/* Adjustments for input[type="file"] */
+input[type="file"] {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    transition: border-color 0.3s ease-in-out;
+}
+
+input[type="file"]:focus {
+    border-color: #65ace4;
+    box-shadow: 0 0 5px rgba(100, 149, 237, 0.5);
+}
+
+.custom-select-style {
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #222;
+    color: #fff;
+    border: 1px solid #444;
+}
+
+.custom-textarea-style {
+    border-radius: 10px;
+    background-color: #222;
+    color: #fff;
+    border: 1px solid #444;
+}
+
+.custom-textarea-style:focus,
+.custom-select-style:focus {
+    border-color: #dbb658;
+    box-shadow: 0 0 0 0.25rem rgba(218, 165, 32, 0.25);
+}
+
+.bg-custom {
+    background: linear-gradient(60deg,
+            rgba(30, 30, 30, 1) 0%,
+            rgba(0, 0, 0, 1) 100%);
+
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.btn-cancel {
+    background: #ffffff;
+    color: #000000;
+
+}
+
+/* Styling for the next button */
+.btn-next {
+    background:  #dbb658;;
+    color: #ffffff;
+}

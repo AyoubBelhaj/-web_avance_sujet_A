@@ -1,0 +1,51 @@
+/* about.component.css */
+
+.about-section {
+    padding: 80px 0;
+    background-color: #f8f9fa; /* Choose a suitable background color */
+  }
+  
+  .section-title {
+    font-size: 36px;
+    color: #333; /* Choose a suitable text color */
+    margin-bottom: 20px;
+  }
+  
+  .about-content p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #666; /* Adjust text color */
+  }
+  
+  .about-content img {
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1); /* Add a subtle shadow to the image */
+  }
+
+  .about-section {
+    background-image: url('/assets/images/about.jpg'); /* URL to your image */
+    background-size: cover; /* Cover the entire section */
+    background-position: center; /* Center the background */
+    padding: 60px; /* Adjust padding for content inside */
+  }
+  
+  .about-content {
+    background-color: rgba(255, 255, 255, 0.8); /* Add a semi-transparent white background for better readability */
+    padding: 20px;
+  }
+  
+  /* Media Query for responsiveness */
+  @media (max-width: 768px) {
+    .about-section {
+      padding: 60px 0;
+    }
+  
+    .col-lg-6 {
+      margin-bottom: 30px;
+    }
+  
+    .section-title {
+      font-size: 28px;
+    }
+  }
+  

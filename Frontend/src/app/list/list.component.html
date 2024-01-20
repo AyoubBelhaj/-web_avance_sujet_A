@@ -1,0 +1,55 @@
+<div class="container mt-5">
+    <div class="reclamations-list">
+        <div *ngFor="let item of reclamations " class="reclamation-card">
+            <div class="form-group">
+                <div class="card client-info">
+                    <h2>ClientInfo</h2>
+                    <div class="info-item">
+                        <span class="info-label">Name:</span>
+                        <span class="info-value">{{item.clientInfo.name}}</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Last Name:</span>
+                        <span class="info-value">{{item.clientInfo.lastname}}</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Birthdate</span>
+                        <span class="info-value">{{item.clientInfo.birthdate}}</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Phone:</span>
+                        <span class="info-value">{{item.clientInfo.phone}}</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">CIN:</span>
+                        <span class="info-value">{{item.clientInfo.CIN}}</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">RIB:</span>
+                        <span class="info-value">{{item.clientInfo.RIB}}</span>
+                    </div>
+                </div>
+                <hr class="reclamation-divider">
+                <div class="card reclamation-details">
+                    <h2>Reclamation Details</h2>
+                    <div class="info-item">
+                        <span class="info-label">Subject:</span>
+                        <span class="info-value">{{item.subject}}</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Details:</span>
+                        <span class="info-value">{{item.RecDetails}}</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Attachment:</span>
+                        <span class="info-value">{{item.attachement}}</span>
+                    </div>
+                </div>
+            </div>
+            
+            
+        </div>
+       
+    
+    </div>
+</div>

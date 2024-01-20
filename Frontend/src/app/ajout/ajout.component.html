@@ -1,0 +1,118 @@
+<div class="container mt-5">
+    <h2 class="step1">Step 1</h2>
+    <div class="background-container">
+
+        <div class="card border-dark mx-auto" style="max-width: 800px;">
+            <div class="card-body bg-custom">
+                <form>
+                    <div class="mb-3">
+                        <label class="form-label">Name</label>
+                        <input [(ngModel)]="clientInfo.name" type="text" id="name" name="name" class="form-control"
+                            placeholder="First name" [ngModelOptions]="{standalone: true}" required #name="ngModel"
+                            minlength="4">
+                        <div *ngIf="name.invalid && (name.dirty || name.touched)" class="alert">
+                            <div *ngIf="name.errors?.['required']">Name is required.</div>
+                            <div *ngIf="name.errors?.['minlength']">
+                                Name must be at least 4 characters long.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Last name</label>
+                        <input [(ngModel)]="clientInfo.lastname" type="text" id="lastname" name="lastname"
+                            class="form-control" placeholder="Last name" [ngModelOptions]="{standalone: true}" required
+                            #lastname="ngModel" minlength="4">
+                        <div *ngIf="lastname.invalid && (lastname.dirty || lastname.touched)" class="alert">
+                            <div *ngIf="lastname.errors?.['required']">Last Name is required.</div>
+                            <div *ngIf="lastname.errors?.['minlength']">
+                                Last Name must be at least 4 characters long.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Birthdate</label>
+                        <input [(ngModel)]="clientInfo.birthdate" type="date" id="birthdate" name="birthdate"
+                            class="form-control" placeholder="date" [ngModelOptions]="{standalone: true}" required
+                            #birthdate="ngModel">
+
+                        <div *ngIf="birthdate.invalid && (birthdate.dirty || birthdate.touched)" class="alert">
+                            <div *ngIf="birthdate.errors?.['required']">Birthdate is required.</div>
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Civility</label>
+                        <input [(ngModel)]="clientInfo.civility" type="text" id="civility" name="civility"
+                            class="form-control" placeholder="Civility" [ngModelOptions]="{standalone: true}" required
+                            #civility="ngModel" minlength="4">
+
+                        <div *ngIf="civility.invalid && (civility.dirty || civility.touched)" class="alert">
+                            <div *ngIf="civility.errors?.['required']">Civility is required.</div>
+                            <div *ngIf="civility.errors?.['minlength']">
+                                Civility must be at least 4 characters long.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Phone Number</label>
+                        <input [(ngModel)]="clientInfo.phone" type="tel" id="phone" name="phone" class="form-control"
+                            placeholder="Phone number" [ngModelOptions]="{standalone: true}" required #phone="ngModel"
+                            minlength="8" maxlength="8">
+                        <small id="passwordHelpInline" class="text-muted">
+                            Must be 8 characters long.
+                        </small>
+
+                        <div *ngIf="phone.invalid && (phone.dirty || phone.touched)" class="alert">
+                            <div *ngIf="phone.errors?.['required']">Phone number is required.</div>
+                            <div *ngIf="phone.errors?.['minlength']">
+                                Number must be at least 8 characters long.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">CIN</label>
+                        <input [(ngModel)]="clientInfo.CIN" type="text" id="CIN" name="CIN" class="form-control"
+                            placeholder="CIN" [ngModelOptions]="{standalone: true}" required #CIN="ngModel"
+                            minlength="8" maxlength="8">
+                        <small id="passwordHelpInline" class="text-muted">
+                            Must be 8 characters long.
+                        </small>
+
+                        <div *ngIf="CIN.invalid && (CIN.dirty || CIN.touched)" class="alert">
+                            <div *ngIf="CIN.errors?.['required']">CIN is required.</div>
+                            <div *ngIf="CIN.errors?.['minlength']">
+                                CIN must be at least 8 characters long.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">RIB</label>
+                        <input [(ngModel)]="clientInfo.RIB" type="text" id="RIB" name="RIB" class="form-control"
+                            placeholder="RIB" [ngModelOptions]="{standalone: true}" required #RIB="ngModel"
+                            minlength="11" maxlength="11">
+                        <small id="passwordHelpInline" class="text-muted">
+                            Must be 11 Numbers long.
+                        </small>
+
+                        <div *ngIf="RIB.invalid && (RIB.dirty || RIB.touched)" class="alert">
+                            <div *ngIf="RIB.errors?.['required']">RIB is required.</div>
+                            <div *ngIf="RIB.errors?.['minlength']">
+                                RIB must be at least 11 characters long.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <button routerLink="/home" class="btn btn-cancel me-3" type="button">Cancel</button>
+                        <button (click)="save()" class="btn btn-next ml-1" type="submit">Next form</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

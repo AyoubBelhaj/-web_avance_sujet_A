@@ -1,0 +1,59 @@
+<div class="container mt-5">
+    <h2>Step 2</h2>
+    <div class="background-container">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <form>
+                    <div class="card bg-dark text-light mx-auto">
+                        <div class="card-body bg-custom">
+                            <div class="form-row mb-3">
+                                <div class="col-md-6">
+                                    <p>Select your subject</p>
+                                </div>
+                                <div class="col-md-6">
+                                    <select class="form-select form-select-lg mb-1 custom-select-style" aria-label=".form-select-lg example"
+                                        name="selectedSubject" [(ngModel)]="reclamation.subject" required>
+                                        <option value="" disabled selected>Choose the subjects</option>
+                                        <option *ngFor="let sub of subjects" [value]="sub.name">{{ sub.name }}</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-row mb-3">
+                                <div class="col-md-12 shadow-textarea">
+                                    <label for="exampleFormControlTextarea6">Your reclamation details</label>
+                                    <textarea [(ngModel)]="reclamation.RecDetails"
+                                        class="form-control z-depth-1 m-1 custom-textarea-style" id="exampleFormControlTextarea6" rows="7"
+                                        placeholder="Write something here..."></textarea>
+                                </div>
+                            </div>
+
+                            <div class="form-row mb-3">
+                                <div class="col-md-6">
+                                    <label for="validationServer04">Attachment</label>
+                                    
+                                    <input (change)="selectfile($event)" type="file" class="form-control m-1 fit-input "
+                                        id="validationServer04" required>
+                                    <div class="valid-feedback">
+                                        Looks good!
+                                    </div>
+                                    <div class="invalid-feedback">
+                                        Please provide a valid attachment.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-row mt-4">
+                                <div class="col-md-12">
+                                    <button routerLink="/home" class="btn btn-cancel ml-2 mr-2 fancy-button" type="button">Cancel</button>
+                                    <button (click)="Confirm()" class="btn btn-next fancy-button"
+                                        type="submit">Confirm</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

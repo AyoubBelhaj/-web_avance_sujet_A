@@ -1,0 +1,49 @@
+.reclamation-card {
+    
+    flex: 1 1 300px;
+    background-color: white;
+    border-top: 60px solid black;
+    border-bottom: 45px solid black;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 60px;
+}
+
+.reclamation-divider {
+    border: none;
+    height: 5px;
+    
+    background-color: #dbb658;
+    margin: 10px 0;
+}
+
+
+.card {
+    /* border: 2px solid  rgba(255, 215, 0, 1) ; */
+    border: none;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #fff;
+
+}
+
+h2 {
+    color: #dbb658;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.info-label {
+    font-weight: bold;
+    min-width: 100px;
+}
+
+.info-value {
+    flex: 1;
+    padding-left: 10px;
+}

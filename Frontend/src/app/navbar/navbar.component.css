@@ -1,8 +1,8 @@
 .navbar {
-    position: fixed; /* Make the navbar sticky */
-    top: 0; /* Position it at the top of the viewport */
+    position: fixed;
+    top: 0; 
     width: 100%;
-    height: 80px; /* Full width */
+    height: 80px; 
     z-index: 1000;
     background: linear-gradient(
       60deg,
@@ -22,26 +22,26 @@
 
   .navbar-dark .navbar-nav .nav-link {
     color: white;
-    border-radius: 20px; /* Rounding the link edges */
+    border-radius: 20px; 
     transition: background-color 0.3s;
-    padding: 8px 15px; /* Adjust link padding */
+    padding: 8px 15px; 
     margin: 0 10px;
   }
 
   .navbar-dark .navbar-nav .nav-link:hover,
   .navbar-dark .navbar-nav .nav-link:focus {
-    color: black; /* Change text color on hover/focus */
-    background-color:#dbb658; /* Change background color on hover/focus */
+    color: black; 
+    background-color:#dbb658;
   }
 
   .navbar-dark .navbar-nav .nav-link.active {
-    color: black; /* Text color for active link */
-    background-color:#dbb658; /* Background color for active link */
+    color: black; 
+    background-color:#dbb658; 
   }
 
   .navbar-brand:hover,
   .navbar-brand:focus{
-    color: #dbb658;/* Change text color on hover/focus */
+    color: #dbb658;
    
   }
 

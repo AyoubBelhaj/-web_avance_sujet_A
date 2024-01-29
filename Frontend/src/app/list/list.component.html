@@ -1,9 +1,12 @@
 <div class="container mt-5">
+    <h2 class="history">History</h2>
+    <p class="explain">You can find here all <span>your reclamations</span> that you sent here</p>
     <div class="reclamations-list">
         <div *ngFor="let item of reclamations " class="reclamation-card">
             <div class="form-group">
                 <div class="card client-info">
                     <h2>ClientInfo</h2>
+                    
                     <div class="info-item">
                         <span class="info-label">Name:</span>
                         <span class="info-value">{{item.clientInfo.name}}</span>
@@ -28,6 +31,9 @@
                         <span class="info-label">RIB:</span>
                         <span class="info-value">{{item.clientInfo.RIB}}</span>
                     </div>
+            
+                
+                   
                 </div>
                 <hr class="reclamation-divider">
                 <div class="card reclamation-details">

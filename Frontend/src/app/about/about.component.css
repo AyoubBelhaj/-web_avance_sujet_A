@@ -1,51 +1,27 @@
-/* about.component.css */
+.container {
+  margin-top: 100px;
+  margin-bottom: 154px;
+}
 
-.about-section {
-    padding: 80px 0;
-    background-color: #f8f9fa; /* Choose a suitable background color */
-  }
-  
-  .section-title {
-    font-size: 36px;
-    color: #333; /* Choose a suitable text color */
-    margin-bottom: 20px;
-  }
-  
-  .about-content p {
-    font-size: 18px;
-    line-height: 1.8;
-    color: #666; /* Adjust text color */
-  }
-  
-  .about-content img {
-    border-radius: 10px;
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1); /* Add a subtle shadow to the image */
-  }
+.text-center{
+  color: #dbb658;
+}
 
-  .about-section {
-    background-image: url('/assets/images/about.jpg'); /* URL to your image */
-    background-size: cover; /* Cover the entire section */
-    background-position: center; /* Center the background */
-    padding: 60px; /* Adjust padding for content inside */
-  }
-  
-  .about-content {
-    background-color: rgba(255, 255, 255, 0.8); /* Add a semi-transparent white background for better readability */
-    padding: 20px;
-  }
-  
-  /* Media Query for responsiveness */
-  @media (max-width: 768px) {
-    .about-section {
-      padding: 60px 0;
-    }
-  
-    .col-lg-6 {
-      margin-bottom: 30px;
-    }
-  
-    .section-title {
-      font-size: 28px;
-    }
-  }
-  
+.card {
+  background: linear-gradient(
+    60deg,
+    rgba(30, 30, 30, 1) 0%, 
+    rgba(0, 0, 0, 1) 100%
+  );
+  max-width: 750px;
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+}
+.btn{
+  margin-left: 275px;
+  padding: 10px;
+  background-color: #dbb658;
+  border: #dbb658;
+}

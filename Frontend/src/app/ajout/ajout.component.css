@@ -3,10 +3,21 @@ input{
 }
 .step1{
     text-align: center;
-    margin-bottom: 20px;
+    margin-top: 80px;
 }
 
+.background-container{
+  margin-top: 60px;
+  margin-bottom: 100px;
+}
 
+.background-container p{
+  text-align: center;
+  font-weight: 600;
+}
+.background-container p span{
+  color: #dbb658;
+}
 
 .bg-custom{
     background: linear-gradient(
@@ -14,8 +25,8 @@ input{
       rgba(30, 30, 30, 1) 0%, 
       rgba(0, 0, 0, 1) 100%
     );
-    background-size: cover; /* Cover the entire background */
-    background-position: center; /* Center the background */
+    background-size: cover; 
+    background-position: center; 
     padding: 30px;
     width: 100%; 
     display: flex;
@@ -30,7 +41,6 @@ input{
     
   }
   
-  /* Styling for the next button */
   .btn-next {
     background:  #dbb658;
     
@@ -39,5 +49,28 @@ input{
 
 .alert{
     color: red;
-    width: 50%;
+    width: 350px;
+}
+
+.image-container-right{
+    position:absolute;
+    right:0;
+    height:400px;
+}
+.image-container-left{
+  position:absolute;
+  left: 20px;
+  height:400px;
+}
+.image-container-right img{
+  width: 100%;
+}
+.image-container-left img{
+  width: 100%;
+}
+
+.buttons{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

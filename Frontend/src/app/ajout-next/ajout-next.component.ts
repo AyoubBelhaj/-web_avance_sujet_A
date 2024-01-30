@@ -21,7 +21,7 @@ export class AjoutNextComponent implements OnInit {
       RIB: 0,
     },
     subject: 'Compte',
-    RecDetails: 'my accont is closed',
+    RecDetails: '',
     attachement: ''
   };
 

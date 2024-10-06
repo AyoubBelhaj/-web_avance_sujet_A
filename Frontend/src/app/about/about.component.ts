@@ -25,12 +25,12 @@ export class AboutComponent implements OnInit {
 
   send(){
     if (this.FormData.valid) {
-      emailjs.send("service_zria99z", "template_ndf8mvx", {
+      emailjs.send(process.env['EMAIL_SERVICE_KEY']!, process.env["EMAIL_TEMPLATE_KEY"]!, {
         to_name: this.FormData.value.to_name,
         your_email: this.FormData.value.your_email,
         from_name: this.FormData.value.from_name,
         message: this.FormData.value.message
-      },"whxd5KIvBHiIqM3xE")
+      },process.env["EMAIL_CODE_KEY"])
       .then(response => {
         console.log('Email sent successfully:', response);
         this.toastr.success("Email sent successfully", 'Success');

@@ -1,0 +1,101 @@
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Align the nav pills */
+.nav-pills .nav-link {
+    padding: 10px 20px;
+    margin-top: 40px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.nav-pills .nav-link.active {
+    background-color: #dbb658;
+    color: #000;
+}
+
+/* Form styling */
+.form-outline {
+    position: relative;
+}
+
+.form-outline .form-control {
+    padding: 12px 15px;
+    border-radius: 0;
+    border: 1px solid #ced4da;
+}
+
+.form-outline .form-label {
+    position: absolute;
+    top: -5px;
+    left: 12px;
+    background-color: #fff;
+    padding: 0 5px;
+    font-size: 12px;
+    color: #6c757d;
+}
+
+.btn-floating {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: #fff;
+    background-color: #6c757d;
+}
+
+.btn-floating i {
+    font-size: 18px;
+}
+
+.btn-floating:hover {
+    background-color: #495057;
+}
+
+.btn-block {
+    width: 100%;
+    background-color: #dbb658;
+    color: #000;
+}
+
+/* Margin adjustments */
+.mb-3,
+.mb-4 {
+    margin-bottom: 1rem !important;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+/* Adjust form check layout */
+.form-check {
+    display: flex;
+    align-items: center;
+}
+
+.form-check-input {
+    margin-right: 10px;
+}
+
+/* Pills Tab Content */
+.tab-pane {
+    padding: 20px;
+}
+
+.form-control {
+    width: 100%;
+    /* Make inputs take the full width of their container */
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+        /* Less padding for smaller screens */
+    }
+}

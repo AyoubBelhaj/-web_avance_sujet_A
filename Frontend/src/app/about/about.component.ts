@@ -25,12 +25,12 @@ export class AboutComponent implements OnInit {
 
   send(){
     if (this.FormData.valid) {
-      emailjs.send("your_service_id", "your_template_id", {
+      emailjs.send("service_zria99z", "template_ndf8mvx", {
         to_name: this.FormData.value.to_name,
         your_email: this.FormData.value.your_email,
         from_name: this.FormData.value.from_name,
         message: this.FormData.value.message
-      },"your_public_key")
+      },"whxd5KIvBHiIqM3xE")
       .then(response => {
         console.log('Email sent successfully:', response);
         this.toastr.success("Email sent successfully", 'Success');
@@ -40,9 +40,18 @@ export class AboutComponent implements OnInit {
         console.error('Email failed to send:', 'Error');
         this.toastr.error('Email failed to send:', 'Error');
       });
+      
+      this.FormData.reset();
+      
     } else {
       console.log('Form is not valid');
       this.toastr.error('Please fill in all required fields.', 'Error');
     }
+    
+  }
+  clear(){
+    this.FormData.value.your_email = "" ;
+    this.FormData.value.from_name = "" ;
+    this.FormData.value.message = "" ;
   }
 }

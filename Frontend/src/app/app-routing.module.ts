@@ -6,11 +6,13 @@ import { AboutComponent } from './about/about.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { HomeComponent } from './home/home.component';
 import { AjoutNextComponent } from './ajout-next/ajout-next.component';
+import { AuthentificationComponent } from './authentification/authentification.component';
 
 const routes: Routes = [
   
   {path:'home',component:HomeComponent},
   {path:'',redirectTo:"/home",pathMatch:'full'},
+  {path:'authentification',component:AuthentificationComponent},
   {path:'ajout',component:AjoutComponent},
   {path:'next',component:AjoutNextComponent},
   {path: 'list', component:ListComponent},

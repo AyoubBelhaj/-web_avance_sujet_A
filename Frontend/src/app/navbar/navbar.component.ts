@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
   styleUrl: './navbar.component.css'
 })
 export class NavbarComponent {
+    isAuthenticated : boolean = false ;
 
+    Login(){
+      this.isAuthenticated = true ;
+    }
+
+    Logout(){
+      this.isAuthenticated = false 
+    }
 }
